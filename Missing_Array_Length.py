@@ -11,6 +11,7 @@ def Missing_Array_Length(array_of_arrays):
     # check if array or an array inside array_of_arrays is empty
     if not array_of_arrays or [] in array_of_arrays or None in array_of_arrays:
         return 0
+    
     # convert arrays to their length values
     array_length = list(map(lambda x: len(x), array_of_arrays))
 
