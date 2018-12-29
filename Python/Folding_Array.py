@@ -1,5 +1,5 @@
 """
-task: fold the array but n runs (one of the Codewars challenge)
+task: fold the array but n times (one of the Codewars challenge)
 example:
 array = [1,2,3,4,5], runs = 1 => [1+5,2+4,3] = [6,6,3]
 array = [1,2,3,4,5], runs = 2 => [6+3,6] = [9,6]
