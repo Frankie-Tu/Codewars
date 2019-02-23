@@ -24,6 +24,7 @@ sum_pairs([10, 5, 2, 3, 7, 5],         10)
 #  * entire pair is earlier, and therefore is the correct answer
 == [3, 7]
 """
+import timeit
 
 def sum_pairs(ints, s):
     """
@@ -38,7 +39,28 @@ def sum_pairs(ints, s):
         currentindex += 1
     return None
 
+# better solution
+def sum_pairs2(ints, s):
+    number_set = set()
+    for num in ints:
+        if s - num in number_set:
+            return [s - num, num]
+        else:
+            number_set.add(num)
+    return None
 
-print(sum_pairs([10, 5, 2, 3, 7, 5],10))
 
+"""
+efficiency testing, confirming that new solution is superior
+first solution loops through all the numbers before current number
+second solution puts "already seen" numbers into set
+"""
+
+# 1.08s
+print(timeit.timeit("sum_pairs([10, 5, 2, 3, 7, 5, 25],30)", "from __main__ import sum_pairs", number=1000000))
+print(sum_pairs([10, 5, 2, 3, 7, 5, 25], 30))
+
+# 0.8s
+print(timeit.timeit("sum_pairs2([10, 5, 2, 3, 7, 5, 25],30)", "from __main__ import sum_pairs2", number=1000000))
+print(sum_pairs2([10, 5, 2, 3, 7, 5, 25], 30))
 
