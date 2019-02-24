@@ -44,3 +44,5 @@ def solution(roman):
 
 print(solution("VI"))
 print(solution("IV"))
+print(solution("XXI"))
+
