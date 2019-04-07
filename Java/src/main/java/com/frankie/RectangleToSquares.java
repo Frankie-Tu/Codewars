@@ -6,13 +6,7 @@ Credit to g964, creator of this original Codewars challenge
 given rectangle with length lng and width wdth.
 Find the combination of squares that fill the rectangle
 
-public class Main {
-
-    public static void main(String[] args) {
-        System.out.println(RectangleToSquares.sqInRect(5,3));
-    }
-
-}
+RectangleToSquares.sqInRect(5,3);
  */
 
 

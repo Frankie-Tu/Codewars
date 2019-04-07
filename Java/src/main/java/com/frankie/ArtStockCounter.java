@@ -10,15 +10,9 @@ Number after space is the current count of this specific art piece "ROXANNE"
 Group list of arts by art categories and return string showing the count of each art category in (A : countA) - (B : countB) - (C : countC) .... format
 if either the list of arts or list of categories is empty, return ""
 
-public class Main {
-
-    public static void main(String[] args) {
-        String[] art = new String[]{"ROXANNE 102", "RHODODE 123", "BKWRKAA 125", "BTSQZFG 239", "DRTYMKH 060"};
-        String[] letter = new String[]{"B","R","D","X"};
-        System.out.println(ArtStockCounter.stockSummary(art,letter));
-    }
-
-}
+String[] art = new String[]{"ROXANNE 102", "RHODODE 123", "BKWRKAA 125", "BTSQZFG 239", "DRTYMKH 060"};
+String[] letter = new String[]{"B","R","D","X"};
+System.out.println(ArtStockCounter.stockSummary(art,letter));
  */
 public class ArtStockCounter {
 
