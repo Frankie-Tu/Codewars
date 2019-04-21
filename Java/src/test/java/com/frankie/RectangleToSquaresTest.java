@@ -10,14 +10,14 @@ public class RectangleToSquaresTest {
     public void sqInRect1() {
         ArrayList<Integer> result = RectangleToSquares.sqInRect(3, 5);
         Integer[] arr = {3,2,1,1};
-        assertArrayEquals(result.toArray(), arr);
+        assertArrayEquals(arr, result.toArray());
     }
 
     @Test
     public void sqInRect2() {
         ArrayList<Integer> result = RectangleToSquares.sqInRect(3, 2);
         Integer[] arr = {2,1,1};
-        assertArrayEquals(result.toArray(), arr);
+        assertArrayEquals(arr, result.toArray());
     }
 
     @Test

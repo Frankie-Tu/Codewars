@@ -1,7 +1,6 @@
 package com.frankie;
 
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 public class ArtStockCounterTest {
@@ -12,7 +11,7 @@ public class ArtStockCounterTest {
         String [] letter = new String[]{"B","R","D","X"};
         String result = ArtStockCounter.stockSummary(art,letter);
         String answer = "(B : 364) - (R : 225) - (D : 60) - (X : 0)";
-        assertEquals(result, answer);
+        assertEquals(answer, result);
     }
 
     @Test
@@ -21,7 +20,7 @@ public class ArtStockCounterTest {
         String [] letter = new String[]{"A","B","C"};
         String result = ArtStockCounter.stockSummary(art,letter);
         String answer = "(A : 220) - (B : 30) - (C : 1)";
-        assertEquals(result, answer);
+        assertEquals(answer,result);
     }
 
 }
