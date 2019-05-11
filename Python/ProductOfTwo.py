@@ -1,10 +1,10 @@
 """
 Original challenge proposed by Codewars user g964
 
-Given a sequence of number from 1 to N where N > 0
+Given a sequence of numbers from 1 to N where N > 0
 
 Find the the two numbers a , b in the sequence where the 
-the product of a and b equals the sum of all numbers excluding a and b.
+product of a and b equals the sum of all numbers excluding a and b.
 
 Return [(a,b),(b,a)]
 
@@ -19,7 +19,7 @@ numbers in range 1 to 26 excluding 15 and 21 sum up to 315
 from itertools import combinations
 import timeit
 
-# first iteration, #O(n^3)
+# first iteration, O(n^4)
 def product_of_two(n):
     # python range goes up to but not including the upper bound, thus +1
     num_seq = list(range(1, n+1))
