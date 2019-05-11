@@ -9,10 +9,10 @@ s squares the value
 o outputs the value into the return array
 Invalid characters should be ignored.
 
-eg. parse("iiisdoso")  ==>  [8, 64]
+eg. run_dead_fish("iiisdoso")  ==>  [8, 64]
 """
 
-def parse(data):
+def run_dead_fish(data):
     current_value = 0
     result_arr = []
     for item in data:
@@ -27,4 +27,4 @@ def parse(data):
 
     return result_arr
 
-print(parse("iiisdoso"))
+print(run_dead_fish("iiisdoso"))

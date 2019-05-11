@@ -1,7 +1,7 @@
 """
 Example:
 
-solution('XXI') # should return 21
+roman_numerals_interpreter('XXI') # should return 21
 Help:
 
 Symbol    Value
@@ -14,7 +14,7 @@ D          500
 M          1,000
 """
 
-def solution(roman):
+def roman_numerals_interpreter(roman):
     converter = {"I": 1,
                  "V": 5,
                  "X": 10,
@@ -42,7 +42,7 @@ def solution(roman):
             index += 1
     return result
 
-print(solution("VI"))
-print(solution("IV"))
-print(solution("XXI"))
+print(roman_numerals_interpreter("VI"))
+print(roman_numerals_interpreter("IV"))
+print(roman_numerals_interpreter("XXI"))
 

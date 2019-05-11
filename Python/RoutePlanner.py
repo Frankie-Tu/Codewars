@@ -1,6 +1,6 @@
 """
 Codewars Challenge created by g964
-write a function choose_best_sum(t, k, ls):
+write a function route_planner(t, k, ls):
 t : max travel distance
 k:  number of towns to visit.
 ls : list of towns in distance value, format: [21,23,32,42]
@@ -9,7 +9,7 @@ Find the max possible travel distance to k towns up until the max distance of t
 from itertools import combinations
 
 
-def choose_best_sum(t, k, ls):
+def route_planner(t, k, ls):
     # check if we have enough towns to visit
     if len(ls) < k:
         return None
@@ -30,4 +30,4 @@ def choose_best_sum(t, k, ls):
 
 # Test
 xs = [100, 76, 56, 44, 89, 73, 68, 56, 64, 123, 2333, 144, 50, 132, 123, 34, 89]
-print(choose_best_sum(430, 5, xs))
+print(route_planner(430, 5, xs))

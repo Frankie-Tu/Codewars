@@ -7,7 +7,7 @@ array = [1,2,3,4,5], runs = 2 => [6+3,6] = [9,6]
 array = [1,2,3,4], runs = 1 => [1+4,2+3] = [5,5]
 and so on ...
 """
-def fold_array(array, runs):
+def folding_array(array, runs):
     current_run = 0
     while current_run < runs:
         array_len = len(array)
@@ -44,5 +44,5 @@ def fold_array(array, runs):
 if __name__ == "__main__":
     # testing
     arr = [1, 2, 3, 4]
-    print(fold_array(arr, 2))
+    print(folding_array(arr, 2))
 

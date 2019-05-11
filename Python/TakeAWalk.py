@@ -10,7 +10,7 @@ It will never give you an empty array (that's not a walk, that's standing still!
 """
 
 # my verified solution
-def isValidWalk(walk):
+def take_a_walk(walk):
     # coordinates
     start_position = [0, 0]
     for item in walk:
